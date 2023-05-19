@@ -30,7 +30,7 @@ public enum ScrollableSegmentedControlSegmentStyle: Int {
      When this value is set to true all segments have the same width which equivalent of the width required to display the text that requires the longest width to be drawn.
      The default value is true.
      */
-    public var fixedSegmentWidth: Bool = true {
+    @objc public var fixedSegmentWidth: Bool = true {
         didSet {
             if oldValue != fixedSegmentWidth {
                 setNeedsLayout()
